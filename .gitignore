@@ -1,0 +1,73 @@
+# Ignore IntelliJ IDEA project files
+.idea/
+
+# Ignore VCS directories
+.vcs/
+
+# Ignore Node.js modules
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore build directories
+/dist/
+/build/
+/out/
+
+# Ignore environment variable files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.swo
+*~
+
+# Ignore coverage reports
+coverage/
+*.lcov
+
+# Ignore dependency directories
+/vendor/
+
+# Ignore compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore database files
+*.db
+*.sqlite
+
+# Ignore IDE-specific files
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore miscellaneous binary files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore Python specific files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Java specific files
+target/
+*.iml
+
+# Ignore Maven specific files
+.mvn/
