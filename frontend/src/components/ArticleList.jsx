@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import api from './api';
 
 const ArticleList = () => {
   const [articles, setArticles] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get('/api/v1/articles')
+    api.get('/articles')
       .then(response => {
-        // Assuming the response is an array of articles
         if (Array.isArray(response.data)) {
           setArticles(response.data);
         } else {
