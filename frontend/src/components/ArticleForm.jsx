@@ -15,7 +15,7 @@ const ArticleForm = () => {
 
   useEffect(() => {
     if (id) {
-      axios.get(`/api/v1/articles/${id}`)
+      axios.get(`articles/${id}`)
         .then(response => {
           setArticle(response.data);
         })
@@ -36,7 +36,7 @@ const ArticleForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (id) {
-      axios.put(`/api/v1/articles/${id}`, article)
+      axios.put(`articles/${id}`, article)
         .then(() => {
           navigate('/');
         })
@@ -44,7 +44,7 @@ const ArticleForm = () => {
           console.error("There was an error updating the article!", error);
         });
     } else {
-      axios.post('/api/v1/articles', article)
+      axios.post('/articles', article)
         .then(() => {
           navigate('/');
         })
